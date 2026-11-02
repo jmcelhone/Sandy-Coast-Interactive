@@ -69,3 +69,25 @@ The Oregon Coast Aquarium's Sandy Coast gallery currently receives less visitor 
 **C-5:** The exhibit must support unattended gallery operation, including automatic startup after a power interruption.
 
 **C-6:** The interactive must undergo visitor testing in the Aquarium gallery in Newport.
+
+# **Success Metrics**
+
+**SM-1:** Visitor spend more time in the Sandy Coast gallery compared to the baseline measured before.
+
+**SM-2:** At least [50]% of visitors who start an experience reach an ending or finish viewing a feature. *Decision rule:* below 50%, simplify the flow. *Collection:* local session log.
+
+**SM-3:** Unattended runtime of two weeks with zero manual recoveries (from the NFR-2 log).
+
+**SM-4:** A non-programmer completes the sample content edit using the guide (from the NFR-4 test).
+
+# **Non-Goals**
+
+*Proposed. Confirm with the Aquarium.*
+
+- Languages beyond English and Spanish.
+- View of where the habitat interactive animals live in the Aquarium (Depends on how this can display in our demo)
+
+# **Open Questions**
+
+- What file format will staff edit (spreadsheet, text file, JSON), and who writes the Spanish text? *Owner:* Team with Aquarium staff, before FR-7 is built.
+- How will time spent in the Sandy Coast be measured, and does a baseline exist? *Owner:* Team, before visitor testing in Newport.
