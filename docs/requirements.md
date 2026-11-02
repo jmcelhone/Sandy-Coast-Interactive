@@ -74,20 +74,26 @@ The Oregon Coast Aquarium's Sandy Coast gallery currently receives less visitor 
 
 **SM-1:** Visitor spend more time in the Sandy Coast gallery compared to the baseline measured before.
 
-**SM-2:** At least [50]% of visitors who start an experience reach an ending or finish viewing a feature. *Decision rule:* below 50%, simplify the flow. *Collection:* local session log.
+**SM-2:** At least 50% of visitors who start an experience reach an ending or finish viewing a feature. *Decision rule:* below 50%, simplify the flow. *Collection:* local session log.
 
 **SM-3:** Unattended runtime of two weeks with zero manual recoveries (from the NFR-2 log).
 
 **SM-4:** A non-programmer completes the sample content edit using the guide (from the NFR-4 test).
 
+**SM-5**  Pausing or resuming a session. The 60-second timeout (FR-5) ends it.
+
 # **Non-Goals**
 
 *Proposed. Confirm with the Aquarium.*
 
-- Languages beyond English and Spanish.
-- View of where the habitat interactive animals live in the Aquarium (Depends on how this can display in our demo)
+- Optional reading for curious visitors at the end of a Bird Nesting Game session. (either by QR Code or allowing visitors to follow a quick link)
+
+- For naming the plover in the bird game, should we give users preselected options or implement a basic child friendly censorship so that users can choose their own name?
+
+- Extended language support outside of English and Spanish (will this be needed for our project?)
 
 # **Open Questions**
 
-- What file format will staff edit (spreadsheet, text file, JSON), and who writes the Spanish text? *Owner:* Team with Aquarium staff, before FR-7 is built.
+- What file format will staff edit for updating the written text as needed (spreadsheet, text file, JSON)? *Owner:* Team, before FR-7 is built.
+
 - How will time spent in the Sandy Coast be measured, and does a baseline exist? *Owner:* Team, before visitor testing in Newport.
