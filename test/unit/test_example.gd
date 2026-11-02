@@ -1,5 +1,5 @@
 extends GutTest
 
 func test_passes() -> void:
-	# this test will pass because 1 does equal 1
-	assert_eq(1, 1)
+	# this test will NOT pass because 1 does NOT equal 0
+	assert_eq(1, 0)
