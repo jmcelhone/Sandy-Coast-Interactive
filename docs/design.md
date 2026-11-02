@@ -10,7 +10,7 @@ The design of the user interface, user experience, educational content, and aspe
 
 The application must be intuitive for visitors of different ages, reliable during extended unattended operation, and maintainable by Aquarium staff.
 
-The functional and nonfunctional requirements are documented in [`../requirements.md`](../requirements.md).
+The functional and nonfunctional requirements are documented in [`requirements.md`](requirements.md).
 
 Primary design goals:
 - Provide two educational activities within one application.
