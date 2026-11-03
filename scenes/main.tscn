@@ -1,3 +1,22 @@
 [gd_scene format=3 uid="uid://bl7lhuhpk0tuy"]
 
+[ext_resource type="Script" uid="uid://f300lwyhcdcs" path="res://scripts/UI/habitat_button.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://dcv3w88po6dds" path="res://scripts/UI/bird_button.gd" id="2_0wfyh"]
+
 [node name="Main" type="Node2D" unique_id=951872558]
+
+[node name="HabitatButton" type="Button" parent="." unique_id=2060653026]
+offset_left = 256.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 320.0
+text = "Habitat Game"
+script = ExtResource("1_o5qli")
+
+[node name="BirdButton" type="Button" parent="." unique_id=410677244]
+offset_left = 576.0
+offset_top = 192.0
+offset_right = 704.0
+offset_bottom = 320.0
+text = "Bird Game"
+script = ExtResource("2_0wfyh")
