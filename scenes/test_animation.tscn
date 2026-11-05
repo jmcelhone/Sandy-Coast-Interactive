@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c3qsnn5tnucoo"]
+
+[ext_resource type="SpriteFrames" uid="uid://dfm8sh6vlc53j" path="res://assets/test_bird_flying.tres" id="1_bxmi2"]
+
+[node name="Test-Animation" type="Node2D" unique_id=1844849597]
+
+[node name="Bird-Fly" type="AnimationPlayer" parent="." unique_id=1790009088]
+
+[node name="Bird-Flying" type="AnimatedSprite2D" parent="." unique_id=1568836988]
+sprite_frames = ExtResource("1_bxmi2")
+animation = &"fly"
+frame_progress = 0.46819034
