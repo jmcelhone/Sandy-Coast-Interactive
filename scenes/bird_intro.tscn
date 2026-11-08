@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://d34xjk8nr2hx5"]
+
+[ext_resource type="Texture2D" uid="uid://b0ojvy2v7xckt" path="res://assets/stephmcblack-bird-7907677_1920.jpg" id="1_447tq"]
+[ext_resource type="Texture2D" uid="uid://bp424ekfa6qhq" path="res://assets/us.svg" id="2_pcsd5"]
+[ext_resource type="Script" uid="uid://bvshx4cadmatt" path="res://scripts/UI/back_button.gd" id="3_pcsd5"]
+
+[node name="BirdIntro" type="Node2D" unique_id=2107924810]
+
+[node name="Bird Image" type="Sprite2D" parent="." unique_id=655254434]
+position = Vector2(254, 340)
+scale = Vector2(0.26263016, 0.2570785)
+texture = ExtResource("1_447tq")
+
+[node name="Bird Name" type="Label" parent="." unique_id=626340017]
+offset_left = 123.0
+offset_top = 178.0
+offset_right = 386.0
+offset_bottom = 235.0
+theme_override_font_sizes/font_size = 40
+text = "Snowy Plover"
+
+[node name="Bird Description" type="Label" parent="." unique_id=27979216]
+offset_left = 510.0
+offset_top = 236.0
+offset_right = 952.0
+offset_bottom = 539.0
+text = "Bird details ......."
+
+[node name="Habitat Map(temp)" type="Sprite2D" parent="." unique_id=62228089]
+position = Vector2(781, 113.312515)
+scale = Vector2(0.35599995, 0.3690577)
+texture = ExtResource("2_pcsd5")
+
+[node name="BackButton" type="Button" parent="." unique_id=34399225]
+offset_left = 817.0
+offset_top = 465.0
+offset_right = 881.0
+offset_bottom = 496.0
+text = "Back"
+script = ExtResource("3_pcsd5")
