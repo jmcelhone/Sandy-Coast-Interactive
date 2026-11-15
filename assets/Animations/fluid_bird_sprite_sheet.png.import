@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jcytpiye3whd"
-path="res://.godot/imported/fluid_bird_sprite_sheet.png-b131deab77ad81b4620a8a3c841a4f7a.ctex"
+path="res://.godot/imported/fluid_bird_sprite_sheet.png-d59b99c84d6637e5f1bfbfac8836c79a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fluid_bird_sprite_sheet.png"
-dest_files=["res://.godot/imported/fluid_bird_sprite_sheet.png-b131deab77ad81b4620a8a3c841a4f7a.ctex"]
+source_file="res://assets/Animations/fluid_bird_sprite_sheet.png"
+dest_files=["res://.godot/imported/fluid_bird_sprite_sheet.png-d59b99c84d6637e5f1bfbfac8836c79a.ctex"]
 
 [params]
 
