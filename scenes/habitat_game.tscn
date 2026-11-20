@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://5r3mmytnrerd"]
+
+[ext_resource type="Script" uid="uid://bvshx4cadmatt" path="res://scripts/UI/back_button.gd" id="1_67uo6"]
+
+[node name="HabitatGame" type="Node2D" unique_id=287742971]
+
+[node name="TitleLabel" type="Label" parent="." unique_id=259465785]
+offset_left = 384.0
+offset_top = 192.0
+offset_right = 576.0
+offset_bottom = 320.0
+text = "Habitat Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=1485037038]
+offset_left = 448.0
+offset_top = 272.0
+offset_right = 512.0
+offset_bottom = 288.0
+text = "Back"
+script = ExtResource("1_67uo6")

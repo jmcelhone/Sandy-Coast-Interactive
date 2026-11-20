@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c3qsnn5tnucoo"]
+
+[ext_resource type="SpriteFrames" uid="uid://dfm8sh6vlc53j" path="res://assets/test_bird_flying.tres" id="1_bxmi2"]
+[ext_resource type="SpriteFrames" uid="uid://b23gturedduwt" path="res://assets/8_frame_fly.tres" id="2_fd5vw"]
+
+[node name="Test-Animation" type="Node2D" unique_id=1844849597]
+
+[node name="Bird-Fly" type="AnimationPlayer" parent="." unique_id=1790009088]
+
+[node name="Bird-Flying" type="AnimatedSprite2D" parent="." unique_id=1568836988]
+sprite_frames = ExtResource("1_bxmi2")
+animation = &"fly"
+frame = 2
+frame_progress = 0.60526407
+
+[node name="8-frame-fly" type="AnimatedSprite2D" parent="." unique_id=1475508513]
+position = Vector2(-771, 10)
+sprite_frames = ExtResource("2_fd5vw")
+animation = &"fluid-fly"
+frame = 1
+frame_progress = 0.99833405

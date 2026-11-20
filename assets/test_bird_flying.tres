@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dfm8sh6vlc53j"]
+
+[ext_resource type="Texture2D" uid="uid://ci4qu5nuvl7qh" path="res://assets/Test-Bird-Animate.png" id="1_s40tf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pgls"]
+atlas = ExtResource("1_s40tf")
+region = Rect2(0, 0, 627, 627)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pscls"]
+atlas = ExtResource("1_s40tf")
+region = Rect2(627, 0, 627, 627)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkx0i"]
+atlas = ExtResource("1_s40tf")
+region = Rect2(0, 627, 627, 627)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uci3a"]
+atlas = ExtResource("1_s40tf")
+region = Rect2(627, 627, 627, 627)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pgls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pscls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkx0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uci3a")
+}],
+"loop": 1,
+"name": &"fly",
+"speed": 5.0
+}]

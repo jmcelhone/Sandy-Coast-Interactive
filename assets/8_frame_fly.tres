@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b23gturedduwt"]
+
+[ext_resource type="Texture2D" uid="uid://jcytpiye3whd" path="res://assets/fluid_bird_sprite_sheet.png" id="1_ovc7l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkp1n"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(0, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gt7f"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(443, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5si3"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(886, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emeg8"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(1329, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri8bn"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(0, 443, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hloul"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(443, 443, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwbxn"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(886, 443, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_faeq4"]
+atlas = ExtResource("1_ovc7l")
+region = Rect2(1329, 443, 443, 443)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkp1n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gt7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5si3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_emeg8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri8bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hloul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwbxn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_faeq4")
+}],
+"loop": 1,
+"name": &"fluid-fly",
+"speed": 12.0
+}]
