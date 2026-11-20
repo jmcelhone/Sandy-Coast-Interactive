@@ -6,7 +6,7 @@
 script = ExtResource("1_78tap")
 Consequence = "You chose nest material option 1"
 BodyText = "The result of this choice..."
-Go_On = "res://data/Food/End/greatend.tres"
+Go_On = "res://data/End/greatend.tres"
 End = true
 Score = 1
 metadata/_custom_type_script = "uid://qtpqit55yagf"

@@ -12,11 +12,11 @@ var end_result: EndData
 
 func chose_end() -> void:
 	if score > 2:
-		end_result = load("res://data/Food/End/greatend.tres")
+		end_result = load("res://data/End/greatend.tres")
 	elif score > 0:
-			end_result = load("res://data/Food/End/goodend.tres")
+			end_result = load("res://data/End/goodend.tres")
 	else:
-		end_result = load("res://data/Food/End/badend.tres")
+		end_result = load("res://data/End/badend.tres")
 
 
 func change_scene(path: String) -> void:

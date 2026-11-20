@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://b0ojvy2v7xckt" path="res://assets/stephmcblack-bird-7907677_1920.jpg" id="2_e3g8o"]
 [ext_resource type="Texture2D" uid="uid://bp424ekfa6qhq" path="res://assets/us.svg" id="3_ldsmb"]
 [ext_resource type="Script" uid="uid://dp3ciidbddbv0" path="res://scenes/bird_scenes/BirdIntro/bird_intro_back.gd" id="4_3cx7h"]
-[ext_resource type="Script" uid="uid://dl0cpknnmq1jf" path="res://scenes/bird_scenes/BirdIntro/test_2.gd" id="5_3cx7h"]
 [ext_resource type="Script" uid="uid://hjadgah2t06i" path="res://scenes/bird_scenes/BirdIntro/test_1.gd" id="6_e3g8o"]
 
 [node name="BirdIntro" type="Node2D" unique_id=2107924810]
@@ -42,16 +41,6 @@ offset_right = 881.0
 offset_bottom = 496.0
 text = "Back"
 script = ExtResource("4_3cx7h")
-
-[node name="test2" type="Button" parent="." unique_id=1385522435]
-visible = false
-offset_left = 294.0
-offset_top = 58.0
-offset_right = 354.46365
-offset_bottom = 92.28966
-text = "test2
-"
-script = ExtResource("5_3cx7h")
 
 [node name="test1" type="Button" parent="." unique_id=341848496]
 offset_left = 101.53635
