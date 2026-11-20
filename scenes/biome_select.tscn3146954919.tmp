@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bjbmalonap70u"]
+
+[ext_resource type="Script" uid="uid://b5i3jtqq5mc6m" path="res://scenes/background.gd" id="1_gqvka"]
+[ext_resource type="Texture2D" uid="uid://bw06hvde63aii" path="res://assets/pexels-sandy-beach.jpg" id="2_gofut"]
+[ext_resource type="Texture2D" uid="uid://dc63fnxlv2wor" path="res://assets/pexels-rocky-cliff.jpg" id="3_m13ms"]
+[ext_resource type="Texture2D" uid="uid://ivyvv5qcsomi" path="res://assets/pexels-coastal-town.jpg" id="4_skq7s"]
+
+[node name="BiomeSelect" type="Node2D" unique_id=896658859]
+
+[node name="Background" type="Node" parent="." unique_id=1409586584]
+script = ExtResource("1_gqvka")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background" unique_id=2047355300]
+position = Vector2(768, 0)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("2_gofut")
+centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Background" unique_id=576567447]
+scale = Vector2(0.14, 0.14856142)
+texture = ExtResource("3_m13ms")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background" unique_id=1112346307]
+position = Vector2(384, 0)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("4_skq7s")
+centered = false

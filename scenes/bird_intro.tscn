@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b0ojvy2v7xckt" path="res://assets/stephmcblack-bird-7907677_1920.jpg" id="1_447tq"]
 [ext_resource type="Texture2D" uid="uid://bp424ekfa6qhq" path="res://assets/us.svg" id="2_pcsd5"]
 [ext_resource type="Script" uid="uid://bvshx4cadmatt" path="res://scripts/UI/back_button.gd" id="3_pcsd5"]
+[ext_resource type="Script" uid="uid://d4hmch8jw6u7v" path="res://scenes/next_button.gd" id="4_mbycc"]
 
 [node name="BirdIntro" type="Node2D" unique_id=2107924810]
 
@@ -38,3 +39,11 @@ offset_right = 881.0
 offset_bottom = 496.0
 text = "Back"
 script = ExtResource("3_pcsd5")
+
+[node name="NextButton" type="Button" parent="." unique_id=248677065]
+offset_left = 680.0
+offset_top = 464.0
+offset_right = 725.0
+offset_bottom = 495.0
+text = "Next"
+script = ExtResource("4_mbycc")
