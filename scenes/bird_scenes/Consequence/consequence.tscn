@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c2cfib4fy4hr3"]
+
+[ext_resource type="Script" uid="uid://bk71pg6ikj3sc" path="res://scenes/bird_scenes/Consequence/consequence.gd" id="1_mvkmi"]
+[ext_resource type="Script" uid="uid://ti0j78jmbyyh" path="res://scenes/bird_scenes/Consequence/consequence_back.gd" id="2_mvkmi"]
+[ext_resource type="Script" uid="uid://pirhhvtoe22k" path="res://scenes/bird_scenes/Consequence/go_on.gd" id="3_mvkmi"]
+
+[node name="Consequence" type="Node2D" unique_id=711273571]
+script = ExtResource("1_mvkmi")
+
+[node name="Consequence" type="Label" parent="." unique_id=1695846775]
+offset_left = 226.0
+offset_top = 22.0
+offset_right = 641.0
+offset_bottom = 109.0
+text = "Consequence for chosen decision."
+
+[node name="BackButton" type="Button" parent="." unique_id=864220785]
+offset_left = 868.0
+offset_top = 27.0
+offset_right = 921.0
+offset_bottom = 65.0
+text = "Intro"
+script = ExtResource("2_mvkmi")
+
+[node name="BodyText" type="Label" parent="." unique_id=1498333326]
+offset_left = 174.0
+offset_top = 166.0
+offset_right = 634.0
+offset_bottom = 433.0
+text = "body text"
+
+[node name="Go_On" type="Button" parent="." unique_id=1218141971]
+offset_left = 412.0
+offset_top = 415.0
+offset_right = 466.0
+offset_bottom = 446.0
+text = "Go on"
+script = ExtResource("3_mvkmi")

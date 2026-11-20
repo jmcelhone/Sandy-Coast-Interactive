@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EndData" format=3 uid="uid://db0uqmik3spsv"]
+
+[ext_resource type="Script" uid="uid://ceqfnmsikiuwm" path="res://scripts/end_data.gd" id="1_mxt3q"]
+
+[resource]
+script = ExtResource("1_mxt3q")
+Title = "Great End"
+BodyText = "Great job!"
+metadata/_custom_type_script = "uid://ceqfnmsikiuwm"

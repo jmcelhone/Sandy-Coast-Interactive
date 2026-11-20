@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://d34xjk8nr2hx5"]
+
+[ext_resource type="Script" uid="uid://u7w857h6nanp" path="res://scenes/bird_scenes/BirdIntro/bird_intro.gd" id="1_3cx7h"]
+[ext_resource type="Texture2D" uid="uid://b0ojvy2v7xckt" path="res://assets/stephmcblack-bird-7907677_1920.jpg" id="2_e3g8o"]
+[ext_resource type="Texture2D" uid="uid://bp424ekfa6qhq" path="res://assets/us.svg" id="3_ldsmb"]
+[ext_resource type="Script" uid="uid://dp3ciidbddbv0" path="res://scenes/bird_scenes/BirdIntro/bird_intro_back.gd" id="4_3cx7h"]
+[ext_resource type="Script" uid="uid://dl0cpknnmq1jf" path="res://scenes/bird_scenes/BirdIntro/test_2.gd" id="5_3cx7h"]
+[ext_resource type="Script" uid="uid://hjadgah2t06i" path="res://scenes/bird_scenes/BirdIntro/test_1.gd" id="6_e3g8o"]
+
+[node name="BirdIntro" type="Node2D" unique_id=2107924810]
+script = ExtResource("1_3cx7h")
+
+[node name="Bird Image" type="Sprite2D" parent="." unique_id=655254434]
+position = Vector2(254, 340)
+scale = Vector2(0.26263016, 0.2570785)
+texture = ExtResource("2_e3g8o")
+
+[node name="Bird Name" type="Label" parent="." unique_id=626340017]
+offset_left = 123.0
+offset_top = 178.0
+offset_right = 386.0
+offset_bottom = 235.0
+theme_override_font_sizes/font_size = 40
+text = "Snowy Plover"
+
+[node name="Bird Description" type="Label" parent="." unique_id=27979216]
+offset_left = 508.0
+offset_top = 235.0
+offset_right = 950.0
+offset_bottom = 538.0
+text = "Bird details ......."
+
+[node name="Habitat Map(temp)" type="Sprite2D" parent="." unique_id=62228089]
+position = Vector2(781, 113.312515)
+scale = Vector2(0.35599995, 0.3690577)
+texture = ExtResource("3_ldsmb")
+
+[node name="BackButton" type="Button" parent="." unique_id=34399225]
+offset_left = 817.0
+offset_top = 465.0
+offset_right = 881.0
+offset_bottom = 496.0
+text = "Back"
+script = ExtResource("4_3cx7h")
+
+[node name="test2" type="Button" parent="." unique_id=1385522435]
+visible = false
+offset_left = 294.0
+offset_top = 58.0
+offset_right = 354.46365
+offset_bottom = 92.28966
+text = "test2
+"
+script = ExtResource("5_3cx7h")
+
+[node name="test1" type="Button" parent="." unique_id=341848496]
+offset_left = 101.53635
+offset_top = 58.710342
+offset_right = 162.0
+offset_bottom = 93.0
+text = "Start"
+script = ExtResource("6_e3g8o")

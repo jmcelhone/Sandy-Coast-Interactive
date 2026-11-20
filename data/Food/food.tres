@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DecisionData" format=3 uid="uid://b8glsrv2gfjur"]
+
+[ext_resource type="Script" uid="uid://c2gr04u3higra" path="res://scripts/decision_data.gd" id="1_676yy"]
+
+[resource]
+script = ExtResource("1_676yy")
+question = "Choose Food"
+option1 = "rock"
+option2 = "trash"
+option3 = "snails"
+path1 = "res://data/Food/food1.tres"
+path2 = "res://data/Food/food2.tres"
+path3 = "res://data/Food/food3.tres"
+metadata/_custom_type_script = "uid://c2gr04u3higra"
