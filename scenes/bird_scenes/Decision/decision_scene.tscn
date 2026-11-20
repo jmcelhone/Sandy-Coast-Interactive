@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cl260mnk6rmu4"]
+
+[ext_resource type="Script" uid="uid://cycghnjyhwhbk" path="res://scenes/bird_scenes/Decision/decision_scene.gd" id="1_wgrcj"]
+[ext_resource type="Script" uid="uid://0gp4522x8fc5" path="res://scenes/bird_scenes/Decision/option1.gd" id="2_wgrcj"]
+[ext_resource type="Script" uid="uid://dr48m1bqelfqe" path="res://scenes/bird_scenes/Decision/option_2.gd" id="3_lnydl"]
+[ext_resource type="Script" uid="uid://dotjlmjblp5wf" path="res://scenes/bird_scenes/Decision/decision_scene_back.gd" id="3_qs46e"]
+[ext_resource type="Script" uid="uid://c01ntvxagfshj" path="res://scenes/bird_scenes/Decision/option_3.gd" id="4_qs46e"]
+
+[node name="DecisionScene" type="Node2D" unique_id=430756576]
+script = ExtResource("1_wgrcj")
+
+[node name="Option1" type="Button" parent="." unique_id=925804767]
+offset_left = 192.0
+offset_top = 379.0
+offset_right = 274.86945
+offset_bottom = 454.3565
+text = "option 1"
+script = ExtResource("2_wgrcj")
+
+[node name="Option2" type="Button" parent="." unique_id=1998717573]
+offset_left = 415.0
+offset_top = 379.0
+offset_right = 497.86945
+offset_bottom = 454.3565
+text = "option 2"
+script = ExtResource("3_lnydl")
+
+[node name="Option3" type="Button" parent="." unique_id=1010234752]
+offset_left = 704.0
+offset_top = 380.0
+offset_right = 786.86945
+offset_bottom = 455.3565
+text = "option 3"
+script = ExtResource("4_qs46e")
+
+[node name="Question" type="Label" parent="." unique_id=576599655]
+offset_left = 326.0
+offset_top = 14.0
+offset_right = 587.0
+offset_bottom = 74.0
+text = "Title question here"
+
+[node name="BackButton" type="Button" parent="." unique_id=216477911]
+offset_left = 852.0
+offset_top = 31.0
+offset_right = 916.0
+offset_bottom = 62.0
+text = "Intro"
+script = ExtResource("3_qs46e")
