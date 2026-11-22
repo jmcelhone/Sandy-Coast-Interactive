@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cm00qesyd14d3"]
+
+[ext_resource type="Script" uid="uid://hcstg6ivvj5e" path="res://scenes/bird_scenes/EndScene/end_scene.gd" id="1_msecj"]
+[ext_resource type="Script" uid="uid://bfblxknt3rppn" path="res://scenes/bird_scenes/EndScene/home_button.gd" id="2_0268d"]
+
+[node name="EndScene" type="Node2D" unique_id=1669603563]
+script = ExtResource("1_msecj")
+
+[node name="Title" type="Label" parent="." unique_id=720296605]
+offset_left = 250.0
+offset_top = 166.0
+offset_right = 747.0
+offset_bottom = 373.0
+text = "Body Text"
+
+[node name="BodyText" type="Label" parent="." unique_id=1453046900]
+offset_left = 296.0
+offset_top = 1.0
+offset_right = 601.0
+offset_bottom = 53.0
+text = "End Title"
+
+[node name="Button" type="Button" parent="." unique_id=779170481]
+offset_left = 820.0
+offset_top = 35.0
+offset_right = 885.0
+offset_bottom = 76.0
+text = "Home"
+script = ExtResource("2_0268d")

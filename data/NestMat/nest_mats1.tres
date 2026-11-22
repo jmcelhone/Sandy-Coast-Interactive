@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ConsequenceData" format=3 uid="uid://bxirsvxj4dnb"]
+
+[ext_resource type="Script" uid="uid://qtpqit55yagf" path="res://scripts/consequence_data.gd" id="1_78tap"]
+
+[resource]
+script = ExtResource("1_78tap")
+Consequence = "You chose nest material option 1"
+BodyText = "The result of this choice..."
+Go_On = "res://data/End/greatend.tres"
+End = true
+Score = 1
+metadata/_custom_type_script = "uid://qtpqit55yagf"
