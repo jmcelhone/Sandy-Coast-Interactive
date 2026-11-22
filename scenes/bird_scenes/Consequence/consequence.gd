@@ -20,5 +20,6 @@ func _ready() -> void:
 	if consequence_data.End:
 		EndTruth = true
 		SceneManager.chose_end()
+		SceneManager.score = 0
 	else:
 		decision = load(consequence_data.Go_On)
