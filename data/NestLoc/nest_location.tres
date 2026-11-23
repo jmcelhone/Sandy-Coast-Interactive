@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DecisionData" format=3 uid="uid://c781jcpro3ob2"]
+
+[ext_resource type="Script" uid="uid://c2gr04u3higra" path="res://scripts/decision_data.gd" id="1_u14dq"]
+
+[resource]
+script = ExtResource("1_u14dq")
+question = "Nest Location?"
+option1 = "1nest"
+option2 = "2nest"
+option3 = "3nest"
+path1 = "res://data/NestLoc/nestcon1.tres"
+path2 = "res://data/NestLoc/nestcon2.tres"
+path3 = "res://data/NestLoc/nestcon3.tres"
+metadata/_custom_type_script = "uid://c2gr04u3higra"

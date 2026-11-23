@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DecisionData" format=3 uid="uid://dtxs2wdvg7cv6"]
+
+[ext_resource type="Script" uid="uid://c2gr04u3higra" path="res://scripts/decision_data.gd" id="1_usgtk"]
+
+[resource]
+script = ExtResource("1_usgtk")
+question = "Nest Materials?"
+option1 = "NestMat1"
+option2 = "NestMat2"
+option3 = "NestMat3"
+path1 = "res://data/NestMat/nest_mats1.tres"
+path2 = "res://data/NestMat/nest_mats2.tres"
+path3 = "res://data/NestMat/nest_mats3.tres"
+metadata/_custom_type_script = "uid://c2gr04u3higra"

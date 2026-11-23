@@ -8,4 +8,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _on_pressed() -> void:
-	SceneManager.change_scene("res://scenes/bird_intro.tscn")
+	SceneManager.change_scene("res://scenes/bird_scenes/BirdIntro/bird_intro.tscn")
