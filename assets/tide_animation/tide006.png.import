@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcytpiye3whd"
-path="res://.godot/imported/fluid_bird_sprite_sheet.png-b131deab77ad81b4620a8a3c841a4f7a.ctex"
+uid="uid://2ci07yebps5q"
+path="res://.godot/imported/tide006.png-7236001856f348eb4daf45019bfdfb98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fluid_bird_sprite_sheet.png"
-dest_files=["res://.godot/imported/fluid_bird_sprite_sheet.png-b131deab77ad81b4620a8a3c841a4f7a.ctex"]
+source_file="res://assets/tide_animation/tide006.png"
+dest_files=["res://.godot/imported/tide006.png-7236001856f348eb4daf45019bfdfb98.ctex"]
 
 [params]
 

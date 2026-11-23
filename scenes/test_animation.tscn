@@ -1,8 +1,72 @@
 [gd_scene format=3 uid="uid://c3qsnn5tnucoo"]
 
-[ext_resource type="SpriteFrames" uid="uid://dfm8sh6vlc53j" path="res://assets/test_bird_flying.tres" id="1_bxmi2"]
-[ext_resource type="SpriteFrames" uid="uid://b23gturedduwt" path="res://assets/8_frame_fly.tres" id="2_fd5vw"]
-[ext_resource type="Script" uid="uid://gja5rdiojwtg" path="res://scenes/8_frame_fly.gd" id="3_pkp1n"]
+[ext_resource type="SpriteFrames" uid="uid://dfm8sh6vlc53j" path="res://assets/Animations/test_bird_flying.tres" id="1_bxmi2"]
+[ext_resource type="Texture2D" uid="uid://y0cbuq4x2jp4" path="res://assets/Animations/waves_animation_sprite_sheet.png" id="1_pkp1n"]
+[ext_resource type="SpriteFrames" uid="uid://b23gturedduwt" path="res://assets/Animations/8_frame_fly.tres" id="2_fd5vw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gt7f"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(0, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5si3"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(443, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emeg8"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(886, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri8bn"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(1329, 0, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hloul"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(0, 443, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwbxn"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(443, 443, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_faeq4"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(886, 443, 443, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3iwe3"]
+atlas = ExtResource("1_pkp1n")
+region = Rect2(1329, 443, 443, 443)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m84he"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gt7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5si3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_emeg8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri8bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hloul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwbxn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_faeq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3iwe3")
+}],
+"loop": 1,
+"name": &"waves",
+"speed": 3.0
+}]
 
 [node name="Test-Animation" type="Node2D" unique_id=1844849597]
 
@@ -12,13 +76,19 @@
 position = Vector2(283, 163)
 sprite_frames = ExtResource("1_bxmi2")
 animation = &"fly"
-frame = 3
-frame_progress = 0.012116523
+frame_progress = 0.15040283
+
+[node name="wave-crashing" type="AnimatedSprite2D" parent="." unique_id=1802688952]
+position = Vector2(-606.50006, -93)
+scale = Vector2(4.243248, 3.214787)
+sprite_frames = SubResource("SpriteFrames_m84he")
+animation = &"waves"
+autoplay = "waves"
+frame_progress = 0.01681549
 
 [node name="8-frame-fly" type="AnimatedSprite2D" parent="." unique_id=1475508513]
-position = Vector2(590, 301)
+position = Vector2(-1062, -306)
 sprite_frames = ExtResource("2_fd5vw")
 animation = &"fluid-fly"
-frame = 1
-frame_progress = 0.59508187
-script = ExtResource("3_pkp1n")
+autoplay = "fluid-fly"
+frame_progress = 0.6028298

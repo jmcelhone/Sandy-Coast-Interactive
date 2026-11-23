@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci4qu5nuvl7qh"
-path="res://.godot/imported/Test-Bird-Animate.png-715b611ebca3e9c30049166ca14dc058.ctex"
+uid="uid://dr6derjwhueth"
+path="res://.godot/imported/tide009.png-6041967c6ffc1c7f8142edb499d1a96c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Test-Bird-Animate.png"
-dest_files=["res://.godot/imported/Test-Bird-Animate.png-715b611ebca3e9c30049166ca14dc058.ctex"]
+source_file="res://assets/tide_animation/tide009.png"
+dest_files=["res://.godot/imported/tide009.png-6041967c6ffc1c7f8142edb499d1a96c.ctex"]
 
 [params]
 
