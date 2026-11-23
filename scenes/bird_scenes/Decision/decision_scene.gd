@@ -13,10 +13,14 @@ var consequence_3 : ConsequenceData
 func _ready() -> void:
 	decision_data = SceneManager.selected_decision
 
-	$Question.text = decision_data.question
+	$DecisionHeader/DecisionHeaderPanel/DecisionHeaderLabel.text = decision_data.question
 	$Option1.text = decision_data.option1
 	$Option2.text = decision_data.option2
 	$Option3.text = decision_data.option3
 	consequence_1 = load(decision_data.path1)
 	consequence_2 = load(decision_data.path2)
 	consequence_3 = load(decision_data.path3)
+
+	var is_nest := decision_data.resource_path == "res://data/NestLoc/nest_location.tres"
+	# NestBackground2 is the name that the child is given by the system
+	$NestBackground2.visible = is_nest

@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 func _ready() -> void:
 	get_viewport().size_changed.connect(_layout)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw06hvde63aii"
-path="res://.godot/imported/pexels-sandy-beach.jpg-8816ae490f34b589e7e950cc2f125d6c.ctex"
+path="res://.godot/imported/pexels-sandy-beach.jpg-0ef51be6bf132addcbc7044c1ffc94e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pexels-sandy-beach.jpg"
-dest_files=["res://.godot/imported/pexels-sandy-beach.jpg-8816ae490f34b589e7e950cc2f125d6c.ctex"]
+source_file="res://assets/nest_location/pexels-sandy-beach.jpg"
+dest_files=["res://.godot/imported/pexels-sandy-beach.jpg-0ef51be6bf132addcbc7044c1ffc94e7.ctex"]
 
 [params]
 

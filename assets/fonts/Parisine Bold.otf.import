@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cbdt7w30hajc1"
-path="res://.godot/imported/Parisine Regular.otf-ecbc8600559fa9c7c1c668fb11e352a4.fontdata"
+uid="uid://bf051a0b8b0cp"
+path="res://.godot/imported/Parisine Bold.otf-b2961d7975fe5affa2776217f3351548.fontdata"
 
 [deps]
 
-source_file="res://assets/Parisine Regular.otf"
-dest_files=["res://.godot/imported/Parisine Regular.otf-ecbc8600559fa9c7c1c668fb11e352a4.fontdata"]
+source_file="res://assets/fonts/Parisine Bold.otf"
+dest_files=["res://.godot/imported/Parisine Bold.otf-b2961d7975fe5affa2776217f3351548.fontdata"]
 
 [params]
 
