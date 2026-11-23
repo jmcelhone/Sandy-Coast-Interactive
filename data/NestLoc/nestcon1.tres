@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ConsequenceData" format=3 uid="uid://clbpetbbau47r"]
+
+[ext_resource type="Script" uid="uid://qtpqit55yagf" path="res://scripts/consequence_data.gd" id="1_bd6ca"]
+
+[resource]
+script = ExtResource("1_bd6ca")
+Consequence = "You chose nest option 1"
+BodyText = "The result of this choice..."
+Go_On = "res://data/Food/food.tres"
+Score = 1
+metadata/_custom_type_script = "uid://qtpqit55yagf"

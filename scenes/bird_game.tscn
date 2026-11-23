@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c0sxul6w5eusu"]
 
 [ext_resource type="Script" uid="uid://bvshx4cadmatt" path="res://scripts/UI/back_button.gd" id="1_dfubd"]
+[ext_resource type="Script" uid="uid://boexxipjm8rey" path="res://scripts/UI/play.gd" id="2_figpm"]
 
 [node name="BirdGame" type="Node2D" unique_id=1816732487]
 
@@ -20,3 +21,11 @@ offset_right = 512.0
 offset_bottom = 288.0
 text = "Back"
 script = ExtResource("1_dfubd")
+
+[node name="Play" type="Button" parent="." unique_id=405245843]
+offset_left = 577.0
+offset_top = 245.0
+offset_right = 633.0
+offset_bottom = 276.0
+text = "Play"
+script = ExtResource("2_figpm")
