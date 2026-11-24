@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ivyvv5qcsomi"
-path="res://.godot/imported/pexels-coastal-town.jpg-b8287613c99688f5282e18bbfa23b729.ctex"
+uid="uid://b41yawh83dwga"
+path="res://.godot/imported/full-sandy-dune-with-plants.jpg-57efb32ad44642a9c1a6af461c9dd24d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/nest_location/pexels-coastal-town.jpg"
-dest_files=["res://.godot/imported/pexels-coastal-town.jpg-b8287613c99688f5282e18bbfa23b729.ctex"]
+source_file="res://assets/nest_location_full/full-sandy-dune-with-plants.jpg"
+dest_files=["res://.godot/imported/full-sandy-dune-with-plants.jpg-57efb32ad44642a9c1a6af461c9dd24d.ctex"]
 
 [params]
 

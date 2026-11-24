@@ -2,9 +2,9 @@
 
 [ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="1_gofut"]
 [ext_resource type="Script" uid="uid://b5i3jtqq5mc6m" path="res://scenes/background.gd" id="1_gqvka"]
-[ext_resource type="Texture2D" uid="uid://bw06hvde63aii" path="res://assets/nest_location/pexels-sandy-beach.jpg" id="2_gofut"]
-[ext_resource type="Texture2D" uid="uid://dc63fnxlv2wor" path="res://assets/nest_location/pexels-rocky-cliff.jpg" id="3_m13ms"]
-[ext_resource type="Texture2D" uid="uid://ivyvv5qcsomi" path="res://assets/nest_location/pexels-coastal-town.jpg" id="4_skq7s"]
+[ext_resource type="Texture2D" uid="uid://bw06hvde63aii" path="res://assets/nest_location_columns/beach-grass.jpg" id="2_gofut"]
+[ext_resource type="Texture2D" uid="uid://dc63fnxlv2wor" path="res://assets/nest_location_columns/rocky-cliff.jpg" id="3_m13ms"]
+[ext_resource type="Texture2D" uid="uid://ivyvv5qcsomi" path="res://assets/nest_location_columns/coastal-town.jpg" id="4_skq7s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exa3k"]
 content_margin_left = 16.0
