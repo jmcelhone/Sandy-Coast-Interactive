@@ -23,6 +23,8 @@ func _ready() -> void:
 	consequence_3 = load(decision_data.path3)
 
 	var is_nest := decision_data.resource_path == "res://data/NestLoc/nest_location.tres"
+	var is_food := decision_data.resource_path == "res://data/Food/food.tres"
+	var is_material := decision_data.resource_path == "res://data/NestMat/nest_mats.tres"
 	
 	# Remember which nest was picked (0-4, can be dynamic in the future)
 	if is_nest: # runs on the nest location decision
@@ -34,3 +36,5 @@ func _ready() -> void:
 	
 	# NestBackground2 is the name that the child is given by the system
 	$NestBackground2.visible = is_nest or GameState.nest_index >= 0
+	$FoodChoices.visible = is_food
+	$MaterialChoice.visible = is_material

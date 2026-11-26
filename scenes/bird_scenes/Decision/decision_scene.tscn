@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://0gp4522x8fc5" path="res://scenes/bird_scenes/Decision/option1.gd" id="2_wgrcj"]
 [ext_resource type="Script" uid="uid://dr48m1bqelfqe" path="res://scenes/bird_scenes/Decision/option_2.gd" id="3_lnydl"]
 [ext_resource type="Script" uid="uid://dotjlmjblp5wf" path="res://scenes/bird_scenes/Decision/decision_scene_back.gd" id="3_qs46e"]
+[ext_resource type="Script" uid="uid://dlepd0sx1y2cb" path="res://scenes/bird_scenes/Decision/food_choices.gd" id="3_tnfoj"]
+[ext_resource type="Script" uid="uid://78up7k52tsbm" path="res://scenes/bird_scenes/Decision/material_choice.gd" id="4_po6km"]
 [ext_resource type="Script" uid="uid://c01ntvxagfshj" path="res://scenes/bird_scenes/Decision/option_3.gd" id="4_qs46e"]
 [ext_resource type="Script" uid="uid://b5i3jtqq5mc6m" path="res://scenes/background.gd" id="6_po6km"]
 [ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="6_s4jhe"]
@@ -21,6 +23,14 @@ script = ExtResource("1_wgrcj")
 [node name="NestBackground2" type="Node2D" parent="." unique_id=1428395809]
 visible = false
 script = ExtResource("6_po6km")
+
+[node name="FoodChoices" type="Node2D" parent="." unique_id=2133711717]
+visible = false
+script = ExtResource("3_tnfoj")
+
+[node name="MaterialChoice" type="Node2D" parent="." unique_id=804195665]
+visible = false
+script = ExtResource("4_po6km")
 
 [node name="DecisionHeader" type="CanvasLayer" parent="." unique_id=79235077]
 

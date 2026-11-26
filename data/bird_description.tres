@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EndData" format=3 uid="uid://b7vxwr00jle2m"]
+
+[ext_resource type="Script" uid="uid://ceqfnmsikiuwm" path="res://scripts/end_data.gd" id="1_r530t"]
+
+[resource]
+script = ExtResource("1_r530t")
+Title = "Bird Description"
+BodyText = "The Western Snowy Plover nests on sandy beaches during the summer. They nest in small, camouflaged dips on the open sand, decorated with small bones, pebbles, and shell fragments. "
+metadata/_custom_type_script = "uid://ceqfnmsikiuwm"

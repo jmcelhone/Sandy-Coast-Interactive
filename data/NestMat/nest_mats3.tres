@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_smv56")
 Consequence = "You chose nest material option 3"
-BodyText = "The result of this choice..."
+BodyText = "(Template text)"
 Go_On = "res://data/End/greatend.tres"
 End = true
 metadata/_custom_type_script = "uid://qtpqit55yagf"

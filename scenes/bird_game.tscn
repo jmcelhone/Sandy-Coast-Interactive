@@ -2,30 +2,73 @@
 
 [ext_resource type="Script" uid="uid://bvshx4cadmatt" path="res://scripts/UI/back_button.gd" id="1_dfubd"]
 [ext_resource type="Script" uid="uid://boexxipjm8rey" path="res://scripts/UI/play.gd" id="2_figpm"]
+[ext_resource type="Script" uid="uid://qa7nn1nycn4p" path="res://scenes/horizontal_title_button_divide.gd" id="3_bj0ww"]
+[ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="3_y8occ"]
+[ext_resource type="FontFile" uid="uid://cbdt7w30hajc1" path="res://assets/fonts/Parisine Regular.otf" id="4_4mg6b"]
+[ext_resource type="Script" uid="uid://b5x3e8h4dktyl" path="res://scenes/bird-title-background.gd" id="4_867oy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bj0ww"]
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.93, 1, 0.98366666, 0.8)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xvmku"]
+bg_color = Color(0.48235294, 0.654902, 0.7372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovc7l"]
+bg_color = Color(0.48235294, 0.654902, 0.7372549, 1)
 
 [node name="BirdGame" type="Node2D" unique_id=1816732487]
 
-[node name="TitleLabel" type="Label" parent="." unique_id=1502820517]
-offset_left = 384.0
-offset_top = 192.0
-offset_right = 576.0
-offset_bottom = 320.0
+[node name="Background" type="Node2D" parent="." unique_id=1583971962]
+script = ExtResource("4_867oy")
+
+[node name="TitleHeader" type="CanvasLayer" parent="." unique_id=543895202]
+
+[node name="TitleHeaderPanel" type="PanelContainer" parent="TitleHeader" unique_id=401850608]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -43.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj0ww")
+
+[node name="TitleHeaderLabel" type="Label" parent="TitleHeader/TitleHeaderPanel" unique_id=754075356]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+theme_override_colors/font_color = Color(0.1568, 0.37893328, 0.49, 1)
+theme_override_fonts/font = ExtResource("3_y8occ")
+theme_override_font_sizes/font_size = 60
 text = "Bird Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BackButton" type="Button" parent="." unique_id=2001574085]
-offset_left = 448.0
-offset_top = 272.0
-offset_right = 512.0
-offset_bottom = 288.0
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1429440935]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_bj0ww")
+
+[node name="BackButton" type="Button" parent="HBoxContainer" unique_id=2001574085]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_4mg6b")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_xvmku")
 text = "Back"
 script = ExtResource("1_dfubd")
 
-[node name="Play" type="Button" parent="." unique_id=405245843]
-offset_left = 577.0
-offset_top = 245.0
-offset_right = 633.0
-offset_bottom = 276.0
+[node name="Play" type="Button" parent="HBoxContainer" unique_id=405245843]
+layout_mode = 2
+theme_override_colors/font_color = Color(4.5767417, 6.1061096, 6.8148413, 1)
+theme_override_fonts/font = ExtResource("4_4mg6b")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_ovc7l")
 text = "Play"
 script = ExtResource("2_figpm")

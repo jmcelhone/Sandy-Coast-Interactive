@@ -1,38 +1,68 @@
 [gd_scene format=3 uid="uid://c2cfib4fy4hr3"]
 
 [ext_resource type="Script" uid="uid://bk71pg6ikj3sc" path="res://scenes/bird_scenes/Consequence/consequence.gd" id="1_mvkmi"]
-[ext_resource type="Script" uid="uid://ti0j78jmbyyh" path="res://scenes/bird_scenes/Consequence/consequence_back.gd" id="2_mvkmi"]
 [ext_resource type="Script" uid="uid://pirhhvtoe22k" path="res://scenes/bird_scenes/Consequence/go_on.gd" id="3_mvkmi"]
+[ext_resource type="Script" uid="uid://dotjlmjblp5wf" path="res://scenes/bird_scenes/Decision/decision_scene_back.gd" id="3_o0ocj"]
+[ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="4_o0ocj"]
+[ext_resource type="Script" uid="uid://csxvcei63aphv" path="res://scenes/bird_scenes/Consequence/node_2d.gd" id="5_agmdg"]
+[ext_resource type="FontFile" uid="uid://cbdt7w30hajc1" path="res://assets/fonts/Parisine Regular.otf" id="6_sl4r1"]
+[ext_resource type="Script" uid="uid://c7jcumdevqpp" path="res://scenes/bird_scenes/Consequence/consequence_body_text_2.gd" id="6_u1d32"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agmdg"]
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.48235294, 0.654902, 0.7372549, 0.8)
 
 [node name="Consequence" type="Node2D" unique_id=711273571]
 script = ExtResource("1_mvkmi")
 
-[node name="Consequence" type="Label" parent="." unique_id=1695846775]
-offset_left = 226.0
-offset_top = 22.0
-offset_right = 641.0
-offset_bottom = 109.0
-text = "Consequence for chosen decision."
+[node name="ConsequenceHeader" type="CanvasLayer" parent="." unique_id=126364150]
 
-[node name="BackButton" type="Button" parent="." unique_id=864220785]
-offset_left = 868.0
-offset_top = 27.0
-offset_right = 921.0
-offset_bottom = 65.0
-text = "Intro"
-script = ExtResource("2_mvkmi")
+[node name="ConsequenceHeaderPanel" type="PanelContainer" parent="ConsequenceHeader" unique_id=1350647049]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_agmdg")
 
-[node name="BodyText" type="Label" parent="." unique_id=1498333326]
-offset_left = 174.0
-offset_top = 166.0
-offset_right = 634.0
-offset_bottom = 433.0
-text = "body text"
+[node name="ConsequenceHeaderLabel" type="Label" parent="ConsequenceHeader/ConsequenceHeaderPanel" unique_id=1969175368]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+theme_override_fonts/font = ExtResource("4_o0ocj")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Go_On" type="Button" parent="." unique_id=1218141971]
-offset_left = 412.0
-offset_top = 415.0
-offset_right = 466.0
-offset_bottom = 446.0
-text = "Go on"
+[node name="BackButtonCanvas" type="CanvasLayer" parent="." unique_id=1819258018]
+layer = 2
+
+[node name="Go_On" type="Button" parent="BackButtonCanvas" unique_id=1218141971]
+offset_right = 51.0
+offset_bottom = 32.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("6_sl4r1")
+theme_override_font_sizes/font_size = 20
+text = "Next"
 script = ExtResource("3_mvkmi")
+
+[node name="BackButton" type="Button" parent="BackButtonCanvas" unique_id=1146390753]
+offset_left = 852.0
+offset_top = 31.0
+offset_right = 916.0
+offset_bottom = 62.0
+text = "Intro"
+script = ExtResource("3_o0ocj")
+
+[node name="BodyText2" type="Label" parent="." unique_id=8050381]
+offset_right = 1.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0, 0.28983334, 0.37, 1)
+theme_override_fonts/font = ExtResource("6_sl4r1")
+script = ExtResource("6_u1d32")
+
+[node name="Background" type="Node2D" parent="." unique_id=310921579]
+script = ExtResource("5_agmdg")

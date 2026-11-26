@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_78tap")
 Consequence = "You chose nest material option 1"
-BodyText = "The result of this choice..."
+BodyText = "(Template text)"
 Go_On = "res://data/End/greatend.tres"
 End = true
 Score = 1

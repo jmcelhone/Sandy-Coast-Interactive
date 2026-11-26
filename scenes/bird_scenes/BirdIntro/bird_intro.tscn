@@ -1,51 +1,87 @@
 [gd_scene format=3 uid="uid://d34xjk8nr2hx5"]
 
 [ext_resource type="Script" uid="uid://u7w857h6nanp" path="res://scenes/bird_scenes/BirdIntro/bird_intro.gd" id="1_3cx7h"]
-[ext_resource type="Texture2D" uid="uid://b0ojvy2v7xckt" path="res://assets/stephmcblack-bird-7907677_1920.jpg" id="2_e3g8o"]
-[ext_resource type="Texture2D" uid="uid://bp424ekfa6qhq" path="res://assets/us.svg" id="3_ldsmb"]
 [ext_resource type="Script" uid="uid://dp3ciidbddbv0" path="res://scenes/bird_scenes/BirdIntro/bird_intro_back.gd" id="4_3cx7h"]
+[ext_resource type="Script" uid="uid://dlh15t35ftgte" path="res://scenes/bird_scenes/BirdIntro/start_button_canvas.gd" id="5_0xsn0"]
+[ext_resource type="Script" uid="uid://dpy1dkmmjso1p" path="res://scenes/bird_scenes/BirdIntro/bird_intro_background.gd" id="6_3cx7h"]
 [ext_resource type="Script" uid="uid://hjadgah2t06i" path="res://scenes/bird_scenes/BirdIntro/test_1.gd" id="6_e3g8o"]
+[ext_resource type="Resource" uid="uid://c781jcpro3ob2" path="res://data/NestLoc/nest_location.tres" id="6_mvkva"]
+[ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="7_e3g8o"]
+[ext_resource type="Script" uid="uid://bgwnifymxgsqm" path="res://scenes/bird_scenes/BirdIntro/range_map.gd" id="8_ldsmb"]
+[ext_resource type="Script" uid="uid://hyi4xx1tmm36" path="res://scenes/bird_scenes/BirdIntro/bird_intro_image.gd" id="9_0xsn0"]
+[ext_resource type="Script" uid="uid://dkf56s5likrox" path="res://scenes/bird_scenes/BirdIntro/bird_description_2.gd" id="10_mvkva"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ldsmb"]
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.1568, 0.37893328, 0.49, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3g8o"]
+bg_color = Color(0.48099998, 0.65798336, 0.74, 1)
 
 [node name="BirdIntro" type="Node2D" unique_id=2107924810]
 script = ExtResource("1_3cx7h")
 
-[node name="Bird Image" type="Sprite2D" parent="." unique_id=655254434]
-position = Vector2(254, 340)
-scale = Vector2(0.26263016, 0.2570785)
-texture = ExtResource("2_e3g8o")
+[node name="BirdIntroBackground" type="Node2D" parent="." unique_id=1048664369]
+script = ExtResource("6_3cx7h")
 
-[node name="Bird Name" type="Label" parent="." unique_id=626340017]
-offset_left = 123.0
-offset_top = 178.0
-offset_right = 386.0
-offset_bottom = 235.0
-theme_override_font_sizes/font_size = 40
-text = "Snowy Plover"
+[node name="BirdIntroHeader" type="CanvasLayer" parent="." unique_id=1071793228]
+layer = 3
 
-[node name="Bird Description" type="Label" parent="." unique_id=27979216]
-offset_left = 508.0
-offset_top = 235.0
-offset_right = 950.0
-offset_bottom = 538.0
-text = "Bird details ......."
-
-[node name="Habitat Map(temp)" type="Sprite2D" parent="." unique_id=62228089]
-position = Vector2(781, 113.312515)
-scale = Vector2(0.35599995, 0.3690577)
-texture = ExtResource("3_ldsmb")
-
-[node name="BackButton" type="Button" parent="." unique_id=34399225]
-offset_left = 817.0
-offset_top = 465.0
-offset_right = 881.0
-offset_bottom = 496.0
+[node name="BackButton" type="Button" parent="BirdIntroHeader" unique_id=34399225]
+offset_left = 875.0
+offset_top = 487.0
+offset_right = 939.0
+offset_bottom = 518.0
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
 text = "Back"
 script = ExtResource("4_3cx7h")
 
-[node name="test1" type="Button" parent="." unique_id=341848496]
-offset_left = 101.53635
-offset_top = 58.710342
-offset_right = 162.0
-offset_bottom = 93.0
+[node name="BirdIntroHeaderPanel" type="PanelContainer" parent="BirdIntroHeader" unique_id=1377864959]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ldsmb")
+
+[node name="BirdIntroHeaderLabel" type="Label" parent="BirdIntroHeader/BirdIntroHeaderPanel" unique_id=639878796]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+theme_override_fonts/font = ExtResource("7_e3g8o")
+theme_override_font_sizes/font_size = 50
+text = "Snowy Plover"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButtonCanvas" type="CanvasLayer" parent="." unique_id=491546422]
+layer = 4
+script = ExtResource("5_0xsn0")
+decision_1 = ExtResource("6_mvkva")
+
+[node name="test1" type="Button" parent="StartButtonCanvas" unique_id=341848496]
+offset_left = 778.0
+offset_top = 21.0
+offset_right = 898.0
+offset_bottom = 71.0
+theme_override_fonts/font = ExtResource("7_e3g8o")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_e3g8o")
 text = "Start"
 script = ExtResource("6_e3g8o")
+
+[node name="BirdDescription2" type="Node2D" parent="." unique_id=1214102058]
+visibility_layer = 2
+script = ExtResource("10_mvkva")
+
+[node name="BirdImage" type="Node2D" parent="." unique_id=481480156]
+position = Vector2(188, 205)
+scale = Vector2(0.1976644, 0.2059001)
+script = ExtResource("9_0xsn0")
+
+[node name="RangeMap" type="Node2D" parent="." unique_id=243901341]
+position = Vector2(179, 425)
+scale = Vector2(0.2955, 0.29684845)
+script = ExtResource("8_ldsmb")
