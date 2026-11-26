@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_u14dq")
-question = "Nest Location?"
+question = "Choose Nesting Site"
 option1 = "1nest"
 option2 = "2nest"
 option3 = "3nest"

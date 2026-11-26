@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ivyvv5qcsomi"
-path="res://.godot/imported/pexels-coastal-town.jpg-b8287613c99688f5282e18bbfa23b729.ctex"
+uid="uid://dstr00n8bp2k7"
+path="res://.godot/imported/12_pebbles.png-2b5f34224f48ee5dee83c7d4da441fc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/nest_location/pexels-coastal-town.jpg"
-dest_files=["res://.godot/imported/pexels-coastal-town.jpg-b8287613c99688f5282e18bbfa23b729.ctex"]
+source_file="res://assets/nest_material_images/good/12_pebbles.png"
+dest_files=["res://.godot/imported/12_pebbles.png-2b5f34224f48ee5dee83c7d4da441fc8.ctex"]
 
 [params]
 

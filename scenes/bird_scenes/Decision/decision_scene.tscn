@@ -4,12 +4,11 @@
 [ext_resource type="Script" uid="uid://0gp4522x8fc5" path="res://scenes/bird_scenes/Decision/option1.gd" id="2_wgrcj"]
 [ext_resource type="Script" uid="uid://dr48m1bqelfqe" path="res://scenes/bird_scenes/Decision/option_2.gd" id="3_lnydl"]
 [ext_resource type="Script" uid="uid://dotjlmjblp5wf" path="res://scenes/bird_scenes/Decision/decision_scene_back.gd" id="3_qs46e"]
+[ext_resource type="Script" uid="uid://dlepd0sx1y2cb" path="res://scenes/bird_scenes/Decision/food_choices.gd" id="3_tnfoj"]
+[ext_resource type="Script" uid="uid://78up7k52tsbm" path="res://scenes/bird_scenes/Decision/material_choice.gd" id="4_po6km"]
 [ext_resource type="Script" uid="uid://c01ntvxagfshj" path="res://scenes/bird_scenes/Decision/option_3.gd" id="4_qs46e"]
 [ext_resource type="Script" uid="uid://b5i3jtqq5mc6m" path="res://scenes/background.gd" id="6_po6km"]
 [ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="6_s4jhe"]
-[ext_resource type="Texture2D" uid="uid://bw06hvde63aii" path="res://assets/nest_location/pexels-sandy-beach.jpg" id="7_po6km"]
-[ext_resource type="Texture2D" uid="uid://dc63fnxlv2wor" path="res://assets/nest_location/pexels-rocky-cliff.jpg" id="8_s4jhe"]
-[ext_resource type="Texture2D" uid="uid://ivyvv5qcsomi" path="res://assets/nest_location/pexels-coastal-town.jpg" id="9_4ab52"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ab52"]
 content_margin_left = 16.0
@@ -25,23 +24,13 @@ script = ExtResource("1_wgrcj")
 visible = false
 script = ExtResource("6_po6km")
 
-[node name="Sandy Beach" type="Sprite2D" parent="NestBackground2" unique_id=925745077]
-position = Vector2(-57, -20)
-scale = Vector2(0.14, 0.14)
-texture = ExtResource("7_po6km")
-centered = false
+[node name="FoodChoices" type="Node2D" parent="." unique_id=2133711717]
+visible = false
+script = ExtResource("3_tnfoj")
 
-[node name="Rocky Cliff" type="Sprite2D" parent="NestBackground2" unique_id=1782604682]
-position = Vector2(366, 0)
-scale = Vector2(0.14, 0.14856142)
-texture = ExtResource("8_s4jhe")
-centered = false
-
-[node name="Coastal Town" type="Sprite2D" parent="NestBackground2" unique_id=1170241249]
-position = Vector2(781, 0)
-scale = Vector2(0.14, 0.14)
-texture = ExtResource("9_4ab52")
-centered = false
+[node name="MaterialChoice" type="Node2D" parent="." unique_id=804195665]
+visible = false
+script = ExtResource("4_po6km")
 
 [node name="DecisionHeader" type="CanvasLayer" parent="." unique_id=79235077]
 

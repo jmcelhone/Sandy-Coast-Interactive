@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_usgtk")
-question = "Nest Materials?"
+question = "Choose Nest Material"
 option1 = "NestMat1"
 option2 = "NestMat2"
 option3 = "NestMat3"

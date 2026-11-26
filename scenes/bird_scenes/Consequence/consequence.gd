@@ -14,8 +14,8 @@ func _ready() -> void:
 	
 	SceneManager.score += consequence_data.Score
 
-	$Consequence.text = consequence_data.Consequence
-	$BodyText.text = consequence_data.BodyText
+	$ConsequenceHeader/ConsequenceHeaderPanel/ConsequenceHeaderLabel.text = consequence_data.Consequence
+	$BodyText2.text = consequence_data.BodyText
 	
 	if consequence_data.End:
 		EndTruth = true

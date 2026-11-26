@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0ojvy2v7xckt"
-path="res://.godot/imported/stephmcblack-bird-7907677_1920.jpg-831f19a2b56198c2100539b0046810da.ctex"
+uid="uid://dy66iatqpku13"
+path="res://.godot/imported/03_snail.png-f25c621d89a0b1858e194b7f5608a922.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/stephmcblack-bird-7907677_1920.jpg"
-dest_files=["res://.godot/imported/stephmcblack-bird-7907677_1920.jpg-831f19a2b56198c2100539b0046810da.ctex"]
+source_file="res://assets/food_decision_images/good/03_snail.png"
+dest_files=["res://.godot/imported/03_snail.png-f25c621d89a0b1858e194b7f5608a922.ctex"]
 
 [params]
 

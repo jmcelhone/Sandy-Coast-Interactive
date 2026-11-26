@@ -2,28 +2,68 @@
 
 [ext_resource type="Script" uid="uid://hcstg6ivvj5e" path="res://scenes/bird_scenes/EndScene/end_scene.gd" id="1_msecj"]
 [ext_resource type="Script" uid="uid://bfblxknt3rppn" path="res://scenes/bird_scenes/EndScene/home_button.gd" id="2_0268d"]
+[ext_resource type="Script" uid="uid://bxmjdobpsu020" path="res://scenes/bird_scenes/EndScene/bird_end_body_text.gd" id="2_xk724"]
+[ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="3_d6vuq"]
+[ext_resource type="Script" uid="uid://2pg7d83m8jpl" path="res://scenes/bird_scenes/EndScene/background.gd" id="4_bpkkv"]
+[ext_resource type="Script" uid="uid://bgscouqaksv6i" path="res://scenes/bird_scenes/EndScene/nest_eggs.gd" id="6_tehhw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpkkv"]
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
+bg_color = Color(0.48235294, 0.654902, 0.7372549, 0.8)
 
 [node name="EndScene" type="Node2D" unique_id=1669603563]
 script = ExtResource("1_msecj")
 
-[node name="Title" type="Label" parent="." unique_id=720296605]
-offset_left = 250.0
-offset_top = 166.0
-offset_right = 747.0
-offset_bottom = 373.0
-text = "Body Text"
-
 [node name="BodyText" type="Label" parent="." unique_id=1453046900]
-offset_left = 296.0
-offset_top = 1.0
-offset_right = 601.0
-offset_bottom = 53.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 448.0
+offset_top = 236.0
+offset_right = 752.0
+offset_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
 text = "End Title"
+script = ExtResource("2_xk724")
 
-[node name="Button" type="Button" parent="." unique_id=779170481]
+[node name="EndHeader" type="CanvasLayer" parent="." unique_id=65597866]
+
+[node name="EndHeaderPanel" type="PanelContainer" parent="EndHeader" unique_id=250171708]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bpkkv")
+
+[node name="EndHeaderLabel" type="Label" parent="EndHeader/EndHeaderPanel" unique_id=97934419]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+theme_override_fonts/font = ExtResource("3_d6vuq")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1115384802]
+layer = 4
+
+[node name="NestEggs" type="Node2D" parent="CanvasLayer" unique_id=2116600304]
+script = ExtResource("6_tehhw")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=779170481]
 offset_left = 820.0
 offset_top = 35.0
 offset_right = 885.0
 offset_bottom = 76.0
 text = "Home"
 script = ExtResource("2_0268d")
+
+[node name="Background" type="Node2D" parent="." unique_id=95366657]
+script = ExtResource("4_bpkkv")

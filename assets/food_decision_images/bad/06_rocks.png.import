@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw06hvde63aii"
-path="res://.godot/imported/pexels-sandy-beach.jpg-0ef51be6bf132addcbc7044c1ffc94e7.ctex"
+uid="uid://ckc5bjr8pvkjs"
+path="res://.godot/imported/06_rocks.png-f47a8ed200690c344c14b7444a80ed57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/nest_location/pexels-sandy-beach.jpg"
-dest_files=["res://.godot/imported/pexels-sandy-beach.jpg-0ef51be6bf132addcbc7044c1ffc94e7.ctex"]
+source_file="res://assets/food_decision_images/bad/06_rocks.png"
+dest_files=["res://.godot/imported/06_rocks.png-f47a8ed200690c344c14b7444a80ed57.ctex"]
 
 [params]
 
