@@ -15,6 +15,9 @@ content_margin_right = 16.0
 content_margin_bottom = 8.0
 bg_color = Color(0.48235294, 0.654902, 0.7372549, 0.8)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tehhw"]
+bg_color = Color(0.48235294, 0.65882355, 0.7411765, 1)
+
 [node name="Consequence" type="Node2D" unique_id=711273571]
 script = ExtResource("1_mvkmi")
 
@@ -40,12 +43,13 @@ vertical_alignment = 1
 layer = 2
 
 [node name="Go_On" type="Button" parent="BackButtonCanvas" unique_id=1218141971]
-offset_right = 51.0
-offset_bottom = 32.0
+offset_right = 80.0
+offset_bottom = 50.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("6_sl4r1")
 theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_tehhw")
 text = "Next"
 script = ExtResource("3_mvkmi")
 

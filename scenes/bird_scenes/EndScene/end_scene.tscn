@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://bxmjdobpsu020" path="res://scenes/bird_scenes/EndScene/bird_end_body_text.gd" id="2_xk724"]
 [ext_resource type="FontFile" uid="uid://bf051a0b8b0cp" path="res://assets/fonts/Parisine Bold.otf" id="3_d6vuq"]
 [ext_resource type="Script" uid="uid://2pg7d83m8jpl" path="res://scenes/bird_scenes/EndScene/background.gd" id="4_bpkkv"]
+[ext_resource type="Script" uid="uid://bgscouqaksv6i" path="res://scenes/bird_scenes/EndScene/nest_eggs.gd" id="6_tehhw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpkkv"]
 content_margin_left = 16.0
@@ -51,7 +52,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1115384802]
-layer = 2
+layer = 4
+
+[node name="NestEggs" type="Node2D" parent="CanvasLayer" unique_id=2116600304]
+script = ExtResource("6_tehhw")
 
 [node name="Button" type="Button" parent="CanvasLayer" unique_id=779170481]
 offset_left = 820.0
